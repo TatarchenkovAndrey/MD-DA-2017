@@ -1,0 +1,134 @@
+---
+author: «Andrey Tatarchenkov»
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, collapse = TRUE)
+```
+#Классная работа 1
+
+##1. Арифметика
+
+Сложение
+```{r}
+5 + 5 
+```
+Вычитание
+```{r}
+5 - 5 
+```
+Умножение
+```{r}
+3 * 5
+```
+Деление
+```{r}
+(5 + 5) / 2 
+```
+Возведение в степень
+```{r}
+2^3
+```
+
+Деление по модулю
+```{r}
+17 %% 4
+```
+
+Целочисленное деление
+```{r}
+17 %/% 4
+```
+
+##2. Типы данных
+
+Присвойте значение 33.3 переменной my_numeric
+```{r}
+my_numeric <- 33.3
+```
+Проверьте тип данных переменной
+```{r}
+class(my_numeric)
+```
+Смените значение my_numeric на 42
+```{r}
+my_numeric <- 42
+```
+Проверьте тип данных my_numeric
+```{r}
+class(my_numeric)
+```
+Установите значение my_character в "МИР"
+```{r}
+my_character <- "Привет"
+my_character <- "МИР"
+```
+Проверьте тип данных my_character
+```{r}
+class(my_character)
+```
+Установите my_logical в FALSE
+```{r}
+my_logical <- TRUE
+my_logical <- FALSE
+```
+Проверьте тип данных my_logical
+```{r}
+class(my_logical)
+```
+
+##3. Конверсия типов данных
+
+Проверка и преобразование типов is.XYS as.XYZ 
+
+Присвойте значение 33.3 переменной my_numeric
+```{r}
+my_numeric <- 33.3 
+```
+Установите значение my_character в "33"
+```{r}
+my_character <- "33"
+```
+Проверьте тип данных my_character
+```{r}
+is.numeric(my_character)
+```
+Преобразуйте my_character в число при помощи функции as.numeric и запишите в переменную my_numeric_character
+```{r}
+my_numeric_character <- as.numeric(my_character)
+```
+Пребразуйте сумму my_numeric и my_numeric_character и выведите на экран
+```{r}
+as.character(sum(my_numeric,my_numeric_character))
+```
+
+##4. Переменные
+
+Присвойте значение 66 переменной x
+```{r}
+x <- 66
+```
+Выведите на экран значение x
+```{r}
+x
+```
+Присвойте значение 33 переменной y
+```{r}
+y <- 33
+```
+
+Выведите на экран значение y
+```{r}
+y
+```
+
+Выведите на экран сумму x и y
+```{r}
+x + y
+```
+
+Сохраните сумму в переменную z
+```{r}
+z <- (x + y)
+```
